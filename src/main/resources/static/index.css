@@ -1,21 +1,20 @@
 h1{
     text-align: center;
-    color: blue;
-    padding-top: 120px;
-    padding-bottom: 30px;
-    margin-top: 10px;
-
+    color: dodgerblue;
+    padding: 20px;
 }
+
 input[type=text], input[type=password] {
-    width: 100%;
+    width: 22.5%;
     padding: 12px;
     margin: 10px 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    border-radius: 10px;
 }
 
-button {
+/*button{
     background-color: blue;
     color: white;
     padding: 14px 20px;
@@ -25,24 +24,90 @@ button {
     width: 100%;
 }
 
-button:hover {
+button:hover{
     opacity: 0.8;
+}*/
+
+
+.container{
+    margin: auto;
+    width: 50%;
+    border: 3px;
+    padding: 10px;
+    text-align: center;
 }
 
-.cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-}
-
-.container {
-    padding: 16px;
-}
-
-span.psw {
-    float: right;
-    padding-top: 16px;
+.logbtn{
+    background-color: white;
+    color: dodgerblue;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
 .regbtn{
+    background-color: white;
+    color: dodgerblue;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+}
+table, th, td{
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+th, td{
+    background-color: lightblue;
+}
+/*gør knapperne til mulighederne smukke*/
+.trybtn ul li{
+    list-style: none;
+    display: inline-block;
+}
+/*forhindre madspild her - str og farve*/
+.trybtn ul li a{
+    color: dodgerblue;
+    text-decoration: none;
+    font-size: 13px;
+}
+.logbtn{
+    display: inline-block;
+    text-decoration: none;
+    border: 1px dodgerblue;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+.logbtn:hover{
+    border: 1px solid dodgerblue;
+    transition: 1s;
+    background: darkgray;
+}
+.regbtn{
+    display: inline-block;
+    text-decoration: none;
+    color:dodgerblue;
+    border: 1px dodgerblue;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-right: 30px;
+}
 
+.regbtn:hover{
+    border: 1px solid dodgerblue;
+    transition: 1s;
+    background: darkgray;
+}
+.container {
+    flex-basis: 50%;
+    background: whitesmoke;
+    border-radius: 100px;
+}
+.unpw-box{
+    border-radius: 100px;
 }

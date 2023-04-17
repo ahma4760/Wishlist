@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
@@ -9,28 +9,37 @@
     <!-- Local html css-->
     <link href="../static/index.css" rel="stylesheet">
 </head>
-<h1>Login for wishlist</h1>
+<h1>Login for ønskeseddel</h1>
 <body>
 <form action="action_page.php" method="post">
-
     <div class="container">
-        <label for="uname"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
+            <div>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+            </div>
 
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+            <div>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+            </div>
 
-        <button type="submit">Login</button>
-        <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
-    </div>
+            <div class="container1">
+                <span class="psw">Forgot <a href="">password?</a></span>
+            </div>
 
-    <div class="container" style="background-color:#f1f1f1">
-        <button type="button" class="cancelbtn">Cancel</button>
-        <button type="button" class="regbtn">Register</button>
-        <span class="psw">Forgot <a href="#">password?</a></span>
+        <nav class="trycontainer">
+            <div class="trybtn">
+                <ul>
+                    <button class="logbtn">
+                        <li><a href="wishlist.html">Register</a></li>
+                     </button>
+
+                    <button class="regbtn">
+                        <li><a class="loga" href="wishlist.html">Login</a></li>
+                    </button>
+                </ul>
+            </div>
+        </nav>
     </div>
 </form>
+
 </body>
 </html>
