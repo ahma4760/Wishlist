@@ -10,7 +10,7 @@
     <h1>Ønskeseddel</h1>
 </head>
 <body>
-    <table style="width:80%">
+    <!--<table style="width:80%">
         <tr>
             <th>Id</th>
             <th>Produktnavn</th>
@@ -39,45 +39,25 @@
             </td>
         </tr>
         </tbody>
-    </table>
+    </table>-->
 
     <nav class="new-nav">
         <div class="new-container">
-            <form>
-                <div class="new-row">
-                    <div class="col-75">
-                        <div>
-                            <label for="id">Id</label><br>
-                            <input type="text" id="id" name="Id" placeholder="Id">
-                        </div>
+            <div class="test">
+                <input type="text" id="Produktnavn" name="Produktnavn" placeholder="Produktnavn">
+                <input type="text" id="Antal" name="Antal" placeholder="Antal">
+                <input type="text" id="Pris" name="Pris" placeholder="Pris">
 
-                        <div>
-                            <label for="Produktnavn">Produktnavn</label><br>
-                            <input type="text" id="Produktnavn" name="Produktnavn" placeholder="Produktnavn">
-                        </div>
-
-                        <div>
-                            <label for="Antal">Antal</label><br>
-                            <input type="text" id="Antal" name="Antal" placeholder="Antal">
-                        </div>
-
-                        <div>
-                            <label for="Pris">Pris</label><br>
-                            <input type="text" id="Pris" name="Pris" placeholder="Prisss">
-                        </div>
-
-                        <td>
-                            <a th:href="@{'/update/' + ${product.id}}" href="/update">Opdater</a>
-                        </td>
-                        <td>
-                            <a th:href="@{'/delete/' + ${product.id}}" href="/delete">Slet</a>
-                        </td>
-                    </div>
-                </div>
-                <div class="new-rows">
-                    <input type="submit" value="Tilføj ønske">
-                </div>
-            </form>
+                <td>
+                    <a th:href="@{'/update/' + ${product.id}}" href="/update">Opdater</a>
+                </td>
+                <td>
+                    <a th:href="@{'/delete/' + ${product.id}}" href="/delete">Slet</a>
+                </td>
+                <button class="tilføjønske">
+                    <a href="wishlist.html">Tilføj ønske</a>
+                </button>
+            </div>
         </div>
     </nav>
 </body>

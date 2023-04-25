@@ -83,9 +83,8 @@ th, td{
     border-radius: 10px;
 }
 .logbtn:hover{
-    border: 1px solid dodgerblue;
     transition: 1s;
-    background: darkgray;
+    background: whitesmoke;
 }
 .regbtn{
     display: inline-block;
@@ -99,15 +98,28 @@ th, td{
 }
 
 .regbtn:hover{
-    border: 1px solid dodgerblue;
     transition: 1s;
-    background: darkgray;
-}
-.container {
-    flex-basis: 50%;
     background: whitesmoke;
-    border-radius: 100px;
 }
+
 .unpw-box{
     border-radius: 100px;
+}
+.container1{
+    color: dodgerblue;
+}
+.tilføjønske{
+    display: inline-block;
+    text-decoration: none;
+    color:dodgerblue;
+    border: 1px dodgerblue;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.tilføjønske:hover{
+    transition: 1s;
+    background: whitesmoke;
 }

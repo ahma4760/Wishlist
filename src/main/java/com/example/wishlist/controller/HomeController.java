@@ -52,7 +52,7 @@ public class HomeController {
         Product updateProduct = productRepository.findProductById(updateId);
 
         //add product to the viewmodel, so that it can be used in thymeleaf
-        model.addAttribute("product", updateProduct);
+        model.addAttribute("products", updateProduct);
 
         //tell which HTML-page that has to be shown
         return "update";
